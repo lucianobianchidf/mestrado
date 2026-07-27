@@ -4,6 +4,11 @@ def to_binary_label(next_return):
         return np.nan
     return 1 if next_return > 0 else 0
 
+def validate_columns(df, required_cols, filename):
+    missing = [col for col in required_cols if col not in df.columns]
+    if missing:
+        raise ValueError(f"{filename}: colunas ausentes: {missing}")
+
 def build_sequences(
     df,
     feature_cols,
