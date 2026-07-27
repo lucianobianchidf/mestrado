@@ -1,3 +1,4 @@
+
 def to_binary_label(next_return):
     if np.isnan(next_return):
         return np.nan
