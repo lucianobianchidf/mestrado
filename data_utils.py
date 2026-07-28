@@ -1,3 +1,7 @@
+def reset_random_state(seed=SEED):
+    random.seed(seed)
+    np.random.seed(seed)
+    tf.keras.utils.set_random_seed(seed)
 
 def to_binary_label(next_return):
     if np.isnan(next_return):
