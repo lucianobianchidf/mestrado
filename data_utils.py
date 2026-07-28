@@ -1,4 +1,4 @@
-def reset_random_state(seed=SEED):
+def reset_random_state(seed):
     random.seed(seed)
     np.random.seed(seed)
     tf.keras.utils.set_random_seed(seed)
@@ -17,8 +17,8 @@ def build_sequences(
     df,
     feature_cols,
     price_col,
-    lookback=LOOKBACK,
-    horizon=HORIZON,
+    lookback,
+    horizon,
 ):
     data = df.copy()
     data.columns = [str(col).strip() for col in data.columns]
@@ -80,7 +80,7 @@ def build_sequences(
         np.asarray(y_list, dtype=np.int32),
     )
 
-def temporal_split(X, y, train_size=TRAIN_SIZE, val_size=VAL_SIZE):
+def temporal_split(X, y, train_size, val_size):
     n_samples = len(X)
     train_end = int(n_samples * train_size)
     val_end = int(n_samples * (train_size + val_size))
