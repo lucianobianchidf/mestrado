@@ -37,6 +37,8 @@ def build_sequences(
     horizon,
 ):
     data = df.copy()
+
+    #padroniza nomes
     data.columns = [str(col).strip() for col in data.columns]
 
     validate_columns(
