@@ -104,7 +104,7 @@ def build_sequences(
 
         # monta a partir do índice 0
         start_idx = end_idx - lookback + 1
-        # monta com uma sequência sempre de 10 ocorrências
+        # monta grupos com uma sequência sempre de 10 ocorrências contendo as 10 features de cada ocorrência
         X_list.append(feature_matrix[start_idx:end_idx + 1])
         # monta a partir da 10º ocorrência da série
         y_list.append(int(label))
