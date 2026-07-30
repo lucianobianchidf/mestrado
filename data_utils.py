@@ -36,79 +36,87 @@ def build_sequences(
     lookback,
     horizon,
 ):
-    # copia o dataframe
+    # Cria uma cópia para não modificar o DataFrame original
     data = df.copy()
 
-    # sanitização de nomes
+    # Remove espaços extras dos nomes das colunas
     data.columns = [str(col).strip() for col in data.columns]
 
-    # valida coluna de data, as features e coluna de preço
+    # Valida a presença da coluna de data, das features e da coluna de preço
     validate_columns(
         data,
         required_cols=["date", *feature_cols, price_col],
         filename="DataFrame",
     )
 
-    # converte data e prepara para validar nulo
+    # Converte a coluna de data; valores inválidos tornam-se NaN/NaT
     data["date"] = pd.to_datetime(data["date"], errors="coerce")
 
-    # extrai somente colunas numéricas, converte para número e prepara para nulos
+    # Converte as features e o preço para valores numéricos;
+    # valores inválidos tornam-se NaN
     numeric_cols = [*feature_cols, price_col]
     for col in numeric_cols:
         data[col] = pd.to_numeric(data[col], errors="coerce")
 
-    # ordena por data (asc) e faz drop em valores nulos
+    # Ordena cronologicamente, remove linhas inválidas e recria o índice
     data = (
         data.sort_values("date")
         .dropna(subset=["date", *numeric_cols])
         .reset_index(drop=True)
     )
 
-    # coluna de preço é extraída e convertida em um array
+    # Extrai a coluna de preço como um vetor NumPy
     prices = data[price_col].to_numpy(dtype=np.float64)
 
-    # cria vetor de retornos futuros (nulos) baseado na qtde do array de preços
+    # Inicializa o vetor de retornos futuros com NaN
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
     
-    # verifica se tem dados pra calcular pelo menos 1 horizonte
-    # realiza cálculo do retorno (d+1/d) - 1 = retorno %
+    # Calcula, para cada posição i, o retorno entre i e i + horizon:
+    # (preço futuro / preço atual) - 1
     if len(prices) > horizon:
         # esse vetor começa sempre no retorno do d+1 e vai ter um NaN ao final
         future_returns[:-horizon] = (
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
 
-    # converte o retorno futuro (future_returns) para rótulos 0 ou 1
-    # mesma lógica de d+1 com um valor NaN ao final do array.
+    # Converte os retornos futuros em rótulos binários 0 ou 1.
+    # Os últimos "horizon" elementos permanecem sem rótulo válido.
+    ## mesma lógica de d+1 com um valor NaN ao final do array.
     labels = np.array(
         [to_binary_label(ret) for ret in future_returns],
         dtype=np.float64,
     )
 
-    # extração somente das features, ainda uma matriz bidimensional
+    # Extrai as features como uma matriz:
+    # (número de observações, número de features) - matriz bidimensional
     feature_matrix = data[feature_cols].to_numpy(dtype=np.float32)
 
     X_list = []
     y_list = []
 
-    # obtém o último preço válido da série
+    # Define o limite exclusivo dos índices que possuem retorno futuro válido
     last_valid_end = len(data) - horizon
 
-    # o loop começa a partir do 10º dia, sendo que para fins de índice é 9
-    # lembrando que no python o loop é exclusivo
+    # A primeira janela termina no índice lookback - 1.
+    # Exemplo: com lookback=10, a primeira janela termina no índice 9.
     for end_idx in range(lookback - 1, last_valid_end):
-        # obtem o rótulo começando a partir da 10º ocorrência da série
+        # Obtém o rótulo associado ao último dia da janela
         label = labels[end_idx]
         if np.isnan(label):
             continue
 
-        # monta a partir do índice 0
+        # Calcula o índice inicial da janela
         start_idx = end_idx - lookback + 1
-        # monta grupos com uma sequência sempre de 10 ocorrências contendo as 10 features de cada ocorrência
+        
+        # Adiciona uma janela com formato:
+        # (lookback, número de features)
         X_list.append(feature_matrix[start_idx:end_idx + 1])
-        # monta a partir da 10º ocorrência da série
+        
+        # Adiciona o rótulo referente ao retorno após o final da janela
         y_list.append(int(label))
 
+    # Retorna arrays vazios com as dimensões corretas caso
+    # não seja possível construir nenhuma janela
     if not X_list:
         return (
             np.empty((0, lookback, len(feature_cols)), dtype=np.float32),
