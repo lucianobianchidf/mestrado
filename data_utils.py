@@ -69,6 +69,7 @@ def build_sequences(
 
     # cria vetor de retornos futuros (nulos) baseado na qtde do array de preços
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
+    
     # verifica se tem dados pra calcular pelo menos 1 horizonte
     # realiza cálculo do retorno (d+1/d1) - 1 = retorno %
     if len(prices) > horizon:
@@ -76,7 +77,8 @@ def build_sequences(
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
 
-    # converte o retorno para rótulos 0 ou 1
+    # converte o retorno futuro para rótulos 0 ou 1
+    # aqui armazena sempre o d+1
     labels = np.array(
         [to_binary_label(ret) for ret in future_returns],
         dtype=np.float64,
@@ -88,7 +90,10 @@ def build_sequences(
     X_list = []
     y_list = []
 
+    # obtém o último preço válido da série
     last_valid_end = len(data) - horizon
+
+    
     for end_idx in range(lookback - 1, last_valid_end):
         label = labels[end_idx]
         if np.isnan(label):
