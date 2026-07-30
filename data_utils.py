@@ -97,12 +97,16 @@ def build_sequences(
     # o loop começa a partir do 10º dia, sendo que para fins de índice é 9
     # lembrando que no python o loop é exclusivo
     for end_idx in range(lookback - 1, last_valid_end):
+        # obtem o rótulo começando a partir da 10º ocorrência da série
         label = labels[end_idx]
         if np.isnan(label):
             continue
 
+        # monta a partir do índice 0
         start_idx = end_idx - lookback + 1
+        # monta com uma sequência sempre de 10 ocorrências
         X_list.append(feature_matrix[start_idx:end_idx + 1])
+        # monta a partir da 10º ocorrência da série
         y_list.append(int(label))
 
     if not X_list:
