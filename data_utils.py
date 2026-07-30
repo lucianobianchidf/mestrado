@@ -78,8 +78,8 @@ def build_sequences(
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
 
-    # converte o retorno futuro para rótulos 0 ou 1
-    # aqui armazena sempre o d+1
+    # converte o retorno futuro (future_returns) para rótulos 0 ou 1
+    # mesma lógica de d+1 com um valor NaN ao final do array.
     labels = np.array(
         [to_binary_label(ret) for ret in future_returns],
         dtype=np.float64,
