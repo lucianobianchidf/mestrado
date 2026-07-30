@@ -39,7 +39,7 @@ def build_sequences(
     # copia o dataframe
     data = df.copy()
 
-    #padroniza nomes
+    # sanitização de nomes
     data.columns = [str(col).strip() for col in data.columns]
 
     # valida coluna de data, as features e coluna de preço
