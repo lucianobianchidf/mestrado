@@ -82,7 +82,7 @@ def build_sequences(
         dtype=np.float64,
     )
 
-    # extração somente das features
+    # extração somente das features, ainda uma matriz bidimensional
     feature_matrix = data[feature_cols].to_numpy(dtype=np.float32)
 
     X_list = []
