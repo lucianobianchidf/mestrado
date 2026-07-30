@@ -71,10 +71,11 @@ def build_sequences(
     # Inicializa o vetor de retornos futuros com NaN
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
     
-    # Calcula, para cada posição i, o retorno entre i e i + horizon:
-    # (preço futuro / preço atual) - 1
+    # Calcula, para cada dia d, o retorno futuro de d para d + horizon.
+    # Como HORIZON=1, o cálculo corresponde a:
+    # (preço em d+1 / preço em d) - 1.
+    # O último dia não possui d+1 e, portanto, permanece como NaN.
     if len(prices) > horizon:
-        # esse vetor começa sempre no retorno do d+1 e vai ter um NaN ao final
         future_returns[:-horizon] = (
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
