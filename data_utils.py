@@ -80,9 +80,12 @@ def build_sequences(
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
 
-    # Converte os retornos futuros em rótulos binários 0 ou 1.
-    # Os últimos "horizon" elementos permanecem sem rótulo válido.
-    ## mesma lógica de d+1 com um valor NaN ao final do array.
+    # Converte o retorno futuro de cada dia d em um rótulo binário:
+    # 1 indica que o preço subiu de d para d + horizon;
+    # 0 indica que o preço não subiu.
+    # Como HORIZON=1, o rótulo representa a direção do preço em d+1.
+    # Os últimos "horizon" dias não possuem preço futuro disponível
+    # e, portanto, permanecem com rótulo NaN.
     labels = np.array(
         [to_binary_label(ret) for ret in future_returns],
         dtype=np.float64,
