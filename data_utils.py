@@ -73,6 +73,7 @@ def build_sequences(
     # verifica se tem dados pra calcular pelo menos 1 horizonte
     # realiza cálculo do retorno (d+1/d1) - 1 = retorno %
     if len(prices) > horizon:
+        # esse vetor começa sempre no retorno do d+1 e vai ter um NaN ao final
         future_returns[:-horizon] = (
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
