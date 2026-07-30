@@ -64,20 +64,25 @@ def build_sequences(
         .reset_index(drop=True)
     )
 
-    
+    # coluna de preço é extraída e convertida em um array
     prices = data[price_col].to_numpy(dtype=np.float64)
 
+    # cria vetor de retornos futuros (nulos) baseado na qtde do array de preços
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
+    # verifica se tem dados pra calcular pelo menos 1 horizonte
+    # realiza cálculo do retorno (d+1/d1) - 1 = retorno %
     if len(prices) > horizon:
         future_returns[:-horizon] = (
             prices[horizon:] / prices[:-horizon]
         ) - 1.0
 
+    # converte o retorno para rótulos 0 ou 1
     labels = np.array(
         [to_binary_label(ret) for ret in future_returns],
         dtype=np.float64,
     )
 
+    # extração somente das features
     feature_matrix = data[feature_cols].to_numpy(dtype=np.float32)
 
     X_list = []
