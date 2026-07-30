@@ -36,29 +36,35 @@ def build_sequences(
     lookback,
     horizon,
 ):
+    # copia o dataframe
     data = df.copy()
 
     #padroniza nomes
     data.columns = [str(col).strip() for col in data.columns]
 
+    # valida coluna de data, as features e coluna de preço
     validate_columns(
         data,
         required_cols=["date", *feature_cols, price_col],
         filename="DataFrame",
     )
 
+    # converte data e prepara para validar nulo
     data["date"] = pd.to_datetime(data["date"], errors="coerce")
 
+    # extrai somente colunas numéricas, converte para número e prepara para nulos
     numeric_cols = [*feature_cols, price_col]
     for col in numeric_cols:
         data[col] = pd.to_numeric(data[col], errors="coerce")
 
+    # ordena por data (asc) e faz drop em valores nulos
     data = (
         data.sort_values("date")
         .dropna(subset=["date", *numeric_cols])
         .reset_index(drop=True)
     )
 
+    
     prices = data[price_col].to_numpy(dtype=np.float64)
 
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
