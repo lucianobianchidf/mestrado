@@ -71,7 +71,7 @@ def build_sequences(
     future_returns = np.full(len(prices), np.nan, dtype=np.float64)
     
     # verifica se tem dados pra calcular pelo menos 1 horizonte
-    # realiza cálculo do retorno (d+1/d1) - 1 = retorno %
+    # realiza cálculo do retorno (d+1/d) - 1 = retorno %
     if len(prices) > horizon:
         # esse vetor começa sempre no retorno do d+1 e vai ter um NaN ao final
         future_returns[:-horizon] = (
