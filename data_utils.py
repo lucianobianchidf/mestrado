@@ -94,7 +94,8 @@ def build_sequences(
     # obtém o último preço válido da série
     last_valid_end = len(data) - horizon
 
-    
+    # o loop começa a partir do 10º dia, sendo que para fins de índice é 9
+    # lembrando que no python o loop é exclusivo
     for end_idx in range(lookback - 1, last_valid_end):
         label = labels[end_idx]
         if np.isnan(label):
