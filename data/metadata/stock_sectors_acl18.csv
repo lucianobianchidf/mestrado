@@ -1,0 +1,88 @@
+symbol,sector,company
+XOM,Basic Materials,Exxon Mobil Corporation
+RDS-B,Basic Materials,Royal Dutch Shell
+PTR,Basic Materials,PetroChina Company Limited
+CVX,Basic Materials,Chevron Corporation
+TOT,Basic Materials,TOTAL S.A.
+BP,Basic Materials,BP p.l.c.
+BHP,Basic Materials,BHP Billiton Limited
+SNP,Basic Materials,China Petroleum & Corporation
+SLB,Basic Materials,Schlumberger Limited
+BBL,Basic Materials,BHP Billiton plc
+AAPL,Consumer Goods,Apple Inc.
+PG,Consumer Goods,The Procter & Gamble
+BUD,Consumer Goods,Anheuser-Busch InBev SA/NV Company
+KO,Consumer Goods,The Coca-Cola Company
+PM,Consumer Goods,Philip Morris International
+TM,Consumer Goods,Toyota Motor Corporation
+PEP,Consumer Goods,Pepsico Inc.
+UN,Consumer Goods,Unilever N.V.
+UL,Consumer Goods,Unilever PLC
+MO,Consumer Goods,Altria Group Inc.
+JNJ,Healthcare,Johnson & Johnson
+PFE,Healthcare,Pfizer Inc.
+NVS,Healthcare,Novartis AG
+UNH,Healthcare,UnitedHealth Group Incorporated
+MRK,Healthcare,Merck & Co.
+AMGN,Healthcare,Amgen Inc.
+MDT,Healthcare,Medtronic plc
+ABBV,Healthcare,AbbVie Inc.
+SNY,Healthcare,Sanofi
+CELG,Healthcare,Celgene Corporation
+AMZN,Services,Amazon.com Inc.
+BABA,Services,Alibaba Group Holding
+WMT,Services,Wal-Mart Stores Inc.
+CMCSA,Services,Comcast Corporation
+HD,Services,The Home Depot
+DIS,Services,The Walt Disney
+MCD,Services,McDonald's Corporation
+CHTR,Services,Charter Communications Inc.
+UPS,Services,United Parcel Service Inc.
+PCLN,Services,The Priceline Group
+NEE,Utilities,NextEra Energy Inc.
+DUK,Utilities,Duke Energy Corporation
+D,Utilities,Dominion Energy Inc.
+SO,Utilities,The Southern Company
+NGG,Utilities,National Grid plc
+AEP,Utilities,American Electric Power Inc.
+PCG,Utilities,PG&E Corporation
+EXC,Utilities,Exelon Corporation
+SRE,Utilities,Sempra Energy
+PPL,Utilities,PPL Corporation
+IEP,Conglomerates,Icahn Enterprises L.P.
+HRG,Conglomerates,HRG Group Inc.
+CODI,Conglomerates,Compass Diversified Holdings
+REX,Conglomerates,REX American Resources
+SPLP,Conglomerates,Steel Partners Holdings
+PICO,Conglomerates,PICO Holdings Inc.
+AGFS,Conglomerates,AgroFresh Solutions Inc.
+BCH,Financial,Banco de Chile
+BSAC,Financial,Banco Santander-Chile
+BRK-A,Financial,Berkshire Hathaway Inc.
+JPM,Financial,JPMorgan Chase & Co.
+WFC,Financial,Wells Fargo & Co.
+BAC,Financial,Bank of America
+V,Financial,Visa Inc.
+C,Financial,Citigroup Inc.
+HSBC,Financial,HSBC Holdings plc
+MA,Financial,Mastercard Incorporated
+GE,Industrial Goods,General Electric Company
+MMM,Industrial Goods,3M Company
+BA,Industrial Goods,The Boeing Company
+HON,Industrial Goods,Honeywell International Inc.
+UTX,Industrial Goods,United Technologies Corporation
+LMT,Industrial Goods,Lockheed Martin Corporation
+CAT,Industrial Goods,Caterpillar Inc.
+GD,Industrial Goods,General Dynamics Corporation
+DHR,Industrial Goods,Danaher Corporation
+ABB,Industrial Goods,ABB Ltd
+GOOG,Technology,Alphabet Inc.
+MSFT,Technology,Microsoft Corporation
+FB,Technology,Facebook Inc.
+T,Technology,AT&T Inc.
+CHL,Technology,China Mobile Limited
+ORCL,Technology,Oracle Corporation
+TSM,Technology,Taiwan Semiconductor Manufacturing Company Limited
+VZ,Technology,Verizon Communications Inc.
+INTC,Technology,Intel Corporation
+CSCO,Technology,Cisco Systems Inc.
