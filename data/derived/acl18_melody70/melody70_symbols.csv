@@ -1,0 +1,71 @@
+symbol,sector,company
+BBL,Basic Materials,BHP Billiton plc
+BHP,Basic Materials,BHP Billiton Limited
+BP,Basic Materials,BP p.l.c.
+CVX,Basic Materials,Chevron Corporation
+PTR,Basic Materials,PetroChina Company Limited
+RDS-B,Basic Materials,Royal Dutch Shell
+SLB,Basic Materials,Schlumberger Limited
+SNP,Basic Materials,China Petroleum & Corporation
+TOT,Basic Materials,TOTAL S.A.
+XOM,Basic Materials,Exxon Mobil Corporation
+AAPL,Consumer Goods,Apple Inc.
+BUD,Consumer Goods,Anheuser-Busch InBev SA/NV Company
+KO,Consumer Goods,The Coca-Cola Company
+MO,Consumer Goods,Altria Group Inc.
+PEP,Consumer Goods,Pepsico Inc.
+PG,Consumer Goods,The Procter & Gamble
+PM,Consumer Goods,Philip Morris International
+TM,Consumer Goods,Toyota Motor Corporation
+UL,Consumer Goods,Unilever PLC
+UN,Consumer Goods,Unilever N.V.
+BAC,Financial,Bank of America
+BCH,Financial,Banco de Chile
+BRK-A,Financial,Berkshire Hathaway Inc.
+BSAC,Financial,Banco Santander-Chile
+C,Financial,Citigroup Inc.
+HSBC,Financial,HSBC Holdings plc
+JPM,Financial,JPMorgan Chase & Co.
+MA,Financial,Mastercard Incorporated
+V,Financial,Visa Inc.
+WFC,Financial,Wells Fargo & Co.
+ABBV,Healthcare,AbbVie Inc.
+AMGN,Healthcare,Amgen Inc.
+CELG,Healthcare,Celgene Corporation
+JNJ,Healthcare,Johnson & Johnson
+MDT,Healthcare,Medtronic plc
+MRK,Healthcare,Merck & Co.
+NVS,Healthcare,Novartis AG
+PFE,Healthcare,Pfizer Inc.
+SNY,Healthcare,Sanofi
+UNH,Healthcare,UnitedHealth Group Incorporated
+ABB,Industrial Goods,ABB Ltd
+BA,Industrial Goods,The Boeing Company
+CAT,Industrial Goods,Caterpillar Inc.
+DHR,Industrial Goods,Danaher Corporation
+GD,Industrial Goods,General Dynamics Corporation
+GE,Industrial Goods,General Electric Company
+HON,Industrial Goods,Honeywell International Inc.
+LMT,Industrial Goods,Lockheed Martin Corporation
+MMM,Industrial Goods,3M Company
+UTX,Industrial Goods,United Technologies Corporation
+CHL,Technology,China Mobile Limited
+CSCO,Technology,Cisco Systems Inc.
+FB,Technology,Facebook Inc.
+GOOG,Technology,Alphabet Inc.
+INTC,Technology,Intel Corporation
+MSFT,Technology,Microsoft Corporation
+ORCL,Technology,Oracle Corporation
+T,Technology,AT&T Inc.
+TSM,Technology,Taiwan Semiconductor Manufacturing Company Limited
+VZ,Technology,Verizon Communications Inc.
+AEP,Utilities,American Electric Power Inc.
+D,Utilities,Dominion Energy Inc.
+DUK,Utilities,Duke Energy Corporation
+EXC,Utilities,Exelon Corporation
+NEE,Utilities,NextEra Energy Inc.
+NGG,Utilities,National Grid plc
+PCG,Utilities,PG&E Corporation
+PPL,Utilities,PPL Corporation
+SO,Utilities,The Southern Company
+SRE,Utilities,Sempra Energy

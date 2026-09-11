@@ -1,0 +1,88 @@
+symbol,sector,company,total_rows,unique_dates,duplicated_dates,invalid_days,valid_days,first_date,last_date,first_invalid_date,last_invalid_date,has_complete_history,eligible_sector,selected_melody70,exclusion_reason,daily_files,selected_tweets,selected_weekday_tweets,selected_weekend_tweets,invalid_json_lines
+AAPL,Consumer Goods,Apple Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,696,18365,15625,2740,0
+ABB,Industrial Goods,ABB Ltd,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,71,79,73,6,0
+ABBV,Healthcare,AbbVie Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,382,782,648,134,0
+AEP,Utilities,American Electric Power Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,142,190,153,37,0
+AGFS,Conglomerates,AgroFresh Solutions Inc.,504,504,0,253,251,2014-01-02,2015-12-31,2014-01-02,2015-01-02,False,False,False,incomplete_price_history,0,0,0,0,0
+AMGN,Healthcare,Amgen Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,398,857,722,135,0
+AMZN,Services,Amazon.com Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+BA,Industrial Goods,The Boeing Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,441,886,723,163,0
+BABA,Services,Alibaba Group Holding,504,504,0,209,295,2014-01-02,2015-12-31,2014-01-02,2014-10-29,False,False,False,incomplete_price_history,0,0,0,0,0
+BAC,Financial,Bank of America,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,588,2283,1995,288,0
+BBL,Basic Materials,BHP Billiton plc,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,75,84,80,4,0
+BCH,Financial,Banco de Chile,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,9,9,5,4,0
+BHP,Basic Materials,BHP Billiton Limited,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,230,324,290,34,0
+BP,Basic Materials,BP p.l.c.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,336,572,498,74,0
+BRK-A,Financial,Berkshire Hathaway Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,13,15,15,0,0
+BSAC,Financial,Banco Santander-Chile,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,14,15,12,3,0
+BUD,Consumer Goods,Anheuser-Busch InBev SA/NV Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,127,188,152,36,0
+C,Financial,Citigroup Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,618,2190,1808,382,0
+CAT,Industrial Goods,Caterpillar Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,428,1026,848,178,0
+CELG,Healthcare,Celgene Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,476,1314,1069,245,0
+CHL,Technology,China Mobile Limited,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,127,215,161,54,0
+CHTR,Services,Charter Communications Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+CMCSA,Services,Comcast Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+CODI,Conglomerates,Compass Diversified Holdings,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+CSCO,Technology,Cisco Systems Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,514,1358,1141,217,0
+CVX,Basic Materials,Chevron Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,462,1092,879,213,0
+D,Utilities,Dominion Energy Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,638,4411,3289,1122,0
+DHR,Industrial Goods,Danaher Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,120,163,136,27,0
+DIS,Services,The Walt Disney,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+DUK,Utilities,Duke Energy Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,160,212,167,45,0
+EXC,Utilities,Exelon Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,172,241,206,35,0
+FB,Technology,Facebook Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,692,10724,9109,1615,0
+GD,Industrial Goods,General Dynamics Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,207,283,227,56,0
+GE,Industrial Goods,General Electric Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,540,1724,1443,281,0
+GOOG,Technology,Alphabet Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,680,7014,5893,1121,0
+HD,Services,The Home Depot,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+HON,Industrial Goods,Honeywell International Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,181,255,200,55,0
+HRG,Conglomerates,HRG Group Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+HSBC,Financial,HSBC Holdings plc,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,82,90,82,8,0
+IEP,Conglomerates,Icahn Enterprises L.P.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+INTC,Technology,Intel Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,566,1794,1444,350,0
+JNJ,Healthcare,Johnson & Johnson,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,498,1173,966,207,0
+JPM,Financial,JPMorgan Chase & Co.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,548,1892,1600,292,0
+KO,Consumer Goods,The Coca-Cola Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,480,1388,1117,271,0
+LMT,Industrial Goods,Lockheed Martin Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,267,410,342,68,0
+MA,Financial,Mastercard Incorporated,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,369,665,552,113,0
+MCD,Services,McDonald's Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+MDT,Healthcare,Medtronic plc,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,227,369,313,56,0
+MMM,Industrial Goods,3M Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,312,487,376,111,0
+MO,Consumer Goods,Altria Group Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,309,499,402,97,0
+MRK,Healthcare,Merck & Co.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,421,983,816,167,0
+MSFT,Technology,Microsoft Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,640,3117,2678,439,0
+NEE,Utilities,NextEra Energy Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,158,210,164,46,0
+NGG,Utilities,National Grid plc,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,34,37,31,6,0
+NVS,Healthcare,Novartis AG,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,204,286,246,40,0
+ORCL,Technology,Oracle Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,360,692,580,112,0
+PCG,Utilities,PG&E Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,140,198,153,45,0
+PCLN,Services,The Priceline Group,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+PEP,Consumer Goods,Pepsico Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,300,541,430,111,0
+PFE,Healthcare,Pfizer Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,465,1415,1228,187,0
+PG,Consumer Goods,The Procter & Gamble,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,379,853,676,177,0
+PICO,Conglomerates,PICO Holdings Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+PM,Consumer Goods,Philip Morris International,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,187,265,215,50,0
+PPL,Utilities,PPL Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,128,162,136,26,0
+PTR,Basic Materials,PetroChina Company Limited,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,47,56,53,3,0
+RDS-B,Basic Materials,Royal Dutch Shell,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,3,3,3,0,0
+REX,Conglomerates,REX American Resources,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+SLB,Basic Materials,Schlumberger Limited,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,275,459,374,85,0
+SNP,Basic Materials,China Petroleum & Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,30,31,24,7,0
+SNY,Healthcare,Sanofi,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,171,238,199,39,0
+SO,Utilities,The Southern Company,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,202,317,274,43,0
+SPLP,Conglomerates,Steel Partners Holdings,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+SRE,Utilities,Sempra Energy,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,92,117,94,23,0
+T,Technology,AT&T Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,684,4981,3745,1236,0
+TM,Consumer Goods,Toyota Motor Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,140,199,164,35,0
+TOT,Basic Materials,TOTAL S.A.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,122,152,120,32,0
+TSM,Technology,Taiwan Semiconductor Manufacturing Company Limited,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,106,118,100,18,0
+UL,Consumer Goods,Unilever PLC,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,67,92,86,6,0
+UN,Consumer Goods,Unilever N.V.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,74,101,84,17,0
+UNH,Healthcare,UnitedHealth Group Incorporated,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,336,567,450,117,0
+UPS,Services,United Parcel Service Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+UTX,Industrial Goods,United Technologies Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,267,451,387,64,0
+V,Financial,Visa Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,484,1186,950,236,0
+VZ,Technology,Verizon Communications Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,461,1002,829,173,0
+WFC,Financial,Wells Fargo & Co.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,439,946,810,136,0
+WMT,Services,Wal-Mart Stores Inc.,504,504,0,0,504,2014-01-02,2015-12-31,,,True,False,False,sector_has_fewer_than_10_valid_stocks,0,0,0,0,0
+XOM,Basic Materials,Exxon Mobil Corporation,504,504,0,0,504,2014-01-02,2015-12-31,,,True,True,True,,520,1632,1266,366,0

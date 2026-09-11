@@ -1,0 +1,32 @@
+{
+  "dataset": "ACL18",
+  "source_repository": "https://github.com/deeptrade-public/slot",
+  "source_archive": "data.zip",
+  "reference_model": "Melody-GCN",
+  "period_start": "2014-01-01",
+  "period_end": "2015-12-31",
+  "expected_trading_days": 504,
+  "missing_value_sentinel": -123321,
+  "initial_assets": 87,
+  "initial_sectors": 9,
+  "incomplete_assets": [
+    "AGFS",
+    "BABA"
+  ],
+  "excluded_sectors": [
+    "Conglomerates",
+    "Services"
+  ],
+  "selected_assets": 70,
+  "selected_sectors": 7,
+  "assets_per_selected_sector": 10,
+  "selected_tweets": 87045,
+  "selected_weekday_tweets": 72126,
+  "selected_weekend_tweets": 14919,
+  "selection_rules": [
+    "Require 504 valid trading days",
+    "Treat -123321 as missing data",
+    "Require 10 valid stocks per sector",
+    "Keep all stocks from eligible sectors"
+  ]
+}
