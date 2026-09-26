@@ -1,0 +1,56 @@
+{
+  "version": "v1",
+  "created_utc": "2026-09-26T17:08:48.403698+00:00",
+  "source_directory": "data/acl18/price",
+  "symbols_file": "data/derived/acl18_melody70/melody70_symbols.csv",
+  "output_directory": "data/derived/acl18_melody70_indicators_v1/price",
+  "n_tickers": 70,
+  "original_ohlc_features": [
+    "c_open",
+    "c_high",
+    "c_low",
+    "n_close"
+  ],
+  "indicator_features": [
+    "melody_ma20",
+    "melody_std20",
+    "melody_lb20",
+    "melody_ub20",
+    "melody_ema20",
+    "melody_macd_12_26",
+    "melody_str_log_return"
+  ],
+  "feature_cols_e": [
+    "c_open",
+    "c_high",
+    "c_low",
+    "n_close",
+    "melody_ma20",
+    "melody_std20",
+    "melody_lb20",
+    "melody_ub20",
+    "melody_ema20",
+    "melody_macd_12_26",
+    "melody_str_log_return"
+  ],
+  "parameters": {
+    "ma_window": 20,
+    "std_window": 20,
+    "bands_window": 20,
+    "ema_window": 20,
+    "band_multiplier": 2.0,
+    "macd_fast": 12,
+    "macd_slow": 26
+  },
+  "formulas": {
+    "ma": "rolling mean of close",
+    "std": "rolling std of close, ddof=1",
+    "lb": "MA - 2*STD",
+    "ub": "MA + 2*STD",
+    "ema": "ewm(span=20, adjust=False, min_periods=20) of close",
+    "macd": "EMA(close,12) - EMA(close,26), adjust=False",
+    "str": "ln(close[t]/close[t-1])"
+  },
+  "article_fidelity": "Approximation: article omits w and prints ambiguous LB/UB and STR formulas",
+  "scaling": "None; fit StandardScaler on training split in each experiment"
+}
